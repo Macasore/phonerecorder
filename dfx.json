@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "phonerecorder_backend": {
+      "main": "src/phonerecorder_backend/main.mo",
+      "type": "motoko"
+    },
+    "phonerecorder_frontend": {
+      "dependencies": [
+        "phonerecorder_backend"
+      ],
+      "source": [
+        "src/phonerecorder_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "phonerecorder_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
