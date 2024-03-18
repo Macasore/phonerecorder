@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IC Hello Starter</title>
+  <title>Phone Book</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link type="text/css" rel="stylesheet" href="main.css" />
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.js"></script>
+  <div class="container">
+    <img src="phonebook.png" alt="Phone Book logo" width="100" />
+    <h1>PhoneRecord: <span id="value"></span></h1>
+
+    <div class="divider"></div>
+
+    <h2>Add Contact</h2>
+    <form action="#" id="add-contact">
+      <input id="input-name" type="text" name="name" placeholder="Enter Name" required />
+      <input id="input-number" type="number" name="number" placeholder="Enter Phone Number" required />
+      <input id="submit-btn" type="submit" value="Insert Contact" />
+    </form>
+
+    <h2>Delete Contact</h2>
+    <form action="#" id="delete-contact">
+      <input id="delete-name" type="text" name="deleteName" placeholder="Enter Name to Delete" required />
+      <input id="delete-btn" type="submit" value="Delete Contact" />
+    </form>
+
+    <h2>Find Contact</h2>
+    <form action="#" id="find-contact">
+      <input id="find-name" type="text" name="findName" placeholder="Enter Name to Find" required />
+      <input id="find-btn" type="submit" value="Find Contact" />
+    </form>
+
+    <h2>Get All Contacts</h2>
+    <button id="get-all-btn" type="button">Get All Contacts</button>
+
+  </div>
+  <script src="src/index.js" type="module"></script>
+
 </body>
 
 </html>
